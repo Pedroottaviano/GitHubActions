@@ -14,6 +14,10 @@ public class DemoApplication {
 
 	@GetMapping("/hello")
 	public static String sayHello(){
-		return "Hello World!";
+		return "Hello";
+	}
+	@GetMapping("/world")
+	public static String sayWorld(){
+		return "World";
 	}
 }
