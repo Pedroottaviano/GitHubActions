@@ -1,4 +1,4 @@
-name: Java CI with Maven
+name: Java CI with Maven for JCC
 
 on:
   push:
@@ -23,7 +23,3 @@ jobs:
 
     - name: Build with Maven
       run: mvn clean package
-
-    - name: SonarQube Scan
-      run: mvn sonar:sonar -Dsonar.projectKey=sqp_04cf904ebca092663cf2c3d2b31393edc018d860 -Dsonar.host.url=http://localhost:9000 -Dsonar.login=$SONAR_TOKEN
-
