@@ -17,7 +17,7 @@ public class DemoApplication {
 		return "Hello";
 	}
 	@GetMapping("/world")
-	public static String sayWorld(){
+	public static String sayHello(){
 		return "World";
 	}
 }
